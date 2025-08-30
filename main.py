@@ -23,7 +23,7 @@ def add_todo(task):
 def list_todos():
 	todos = load_todos()
 	if not todos:
-		print('No to-dos found.')
+		print('No to-dos found - nothing to display.')
 		return
 	for idx, todo in enumerate(todos, 1):
 		status = '[x]' if todo['completed'] else '[ ]'
